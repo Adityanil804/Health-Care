@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+:root {
+    /* color */
+    --bg: #ffffff;
+    --text: #12141a;
+    --muted: #6b7280;
+    --brand: #2563eb;
+    --brand-2: #7c3aed;
+    --brand-3: #50b1d1;
+    --brand-4: #b96f7f;
+    --border: #e5e7eb;
+    --success: #059669;
+    --warning: #d97706;
+    --danger: #dc2626;
+    --surface: #f3f4f6;
+
+    /* shadow  */
+    --shadow-sm: 2px 1px 2px rgb(0, 0, 0, 0.06);
+    --shadow-md: 4px 4px 16px rgb(0, 0, 0, 0.08);
+    --shadow-lg: 10px 10px 25px rgb(0, 0, 0, 00.12);
+    --radius: 16px;
+
+    /* sizing  */
+    --step--1: clamp(0.85rem, 0.80rem + 2vw, .95rem);
+    --step-0: clamp(1rem, 0.95rem + 4vw, 1.125rem);
+    --step-1: clamp(1.25rem, 1.1rem + 8vw, 1.5rem);
+    --step-2: clamp(1.5rem, 1.3rem + 1.2vw, 2rem);
+    --step-3: clamp(2rem, 1.6rem + 2vw, 2.75rem);
+    --step-4: clamp(2.5rem, 2.2rem + 3vw, 3.5rem);
+
+    --wrap: min(1600px, 70%);
+    /* transition  */
+    --easing: ease;
+    --speed: 500ms;
+}
+
+.wrap {
+    width: var(--wrap);
+}
+
+.contact {
+    font-size: smaller;
+    max-height: 22px;
+}
+
+.icon {
+    text-align: end;
+
+}
+
+.icon i {
+    margin: 4px 0px 4px 14px;
+}
+
+.navbar {
+    max-height: 34px;
+    padding: 20px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.25rem;
+    font-size: smaller;
+}
+
+.menu a:hover {
+    color: var(--brand);
+    text-decoration: underline var(--brand);
+    text-underline-offset: 24px;
+    text-underline-position: below;
+}
+
+.set1 {
+    width: 600px;
+    position: relative;
+    top: -750px;
+    left: -50;
+    text-align: left;
+
+}
+
+.set1 p {
+    color: var(--brand);
+    line-height: 0.75rem;
+    letter-spacing: 0.4rem;
+}
+
+.set1 h2 {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: var(--text);
+}
+
+.set1 button {
+    margin-top: 1.2rem;
+}
+
+.set2 {
+    width: 500px;
+    position: relative;
+    top: -800px;
+    left: 800px;
+    text-align: left;
+}
+
+.set2 p {
+    color: var(--brand);
+    line-height: 0.75rem;
+    letter-spacing: 0.4rem;
+}
+
+.set2 h2 {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: var(--text);
+}
+
+.set2 button {
+    margin-top: 1.2rem;
+}
+
+.set3 {
+    width: 600px;
+    position: relative;
+    top: -830px;
+    left: 200px;
+    text-align: left;
+}
+
+.set3 p {
+    color: var(--brand);
+    line-height: 0.75rem;
+    letter-spacing: 0.4rem;
+}
+
+.set3 h2 {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: var(--bg);
+}
+
+.set3 button {
+    margin-top: 1.2rem;
+}
+
+.indicator {
+    position: relative;
+    top: 580px;
+}
+
+.heronxt {
+    position: relative;
+    top: -80px;
+}
+
+.heronxt .card {
+    height: 450px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    border: none;
+
+}
+
+.heronxt .card img {
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.heronxt .card h5 {
+    font-weight: 400;
+
+}
+
+.heronxt .card p {
+    font-size: smaller;
+    margin-bottom: 20px;
+}
+
+.heronxt .card button {
+    padding: 10px;
+    letter-spacing: 0.2rem;
+    font-size: smaller;
+}
+
+.sectionodd {
+    background-color: rgba(243, 242, 248, 0.9);
+
+}
+
+.healthcare .coach1 {
+    height: 500px;
+}
+
+.healthcare .coachname {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 220px;
+    gap: 1.25rem;
+    padding-top: 30px;
+    font-size: medium;
+
+}
+
+.healthcare .textwrite {
+    padding: 50px 30px;
+}
+
+.healthcare h6 {
+    letter-spacing: 0.1rem;
+    color: var(--brand);
+    font-size: smaller;
+    font-weight: 600;
+}
+
+.healthcare h4 {
+    font-weight: 500;
+    line-height: 2rem;
+    padding-bottom: 30px;
+}
+
+.healthcare p {
+    font-size: smaller;
+    line-height: 1.5rem;
+
+}
+
+.consult .consult2 {
+    background-color: blue;
+    padding: 60px 60px;
+}
+
+.consult .consult2 h5 {
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.consult .consult2 .col-lg-4 {
+    margin: 8px;
+    padding: 5px 10px;
+    width: 30%;
+    border: none;
+    background-color: blue;
+    border-bottom: 1px solid var(--bg);
+    color: var(--bg);
+
+}
+
+.consult .consult1 {
+    padding: 60px;
+    text-align: center;
+
+}
+
+.consult .consult1 h5 {
+    padding-bottom: 14px;
+}
+
+.consult .consult1 p {
+    font-size: smaller;
+    font-weight: 400;
+}
+
+.consult .consult1 a {
+    font-size: smaller;
+    letter-spacing: 0.1rem;
+    text-decoration: underline dotted blue;
+    text-underline-offset: 7px;
+    text-underline-position: below;
+}
+
+.feedback {
+    padding: 60px 0;
+    height: max-content;
+}
+
+.section-head {
+    text-align: center;
+}
+
+.section-head p {
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: smaller;
+}
+
+.client .card {
+    padding: 20px;
+    width: 30%;
+    margin: 14px;
+    font-size: smaller;
+}
+
+.client .card p {
+    color: var(--muted);
+}
+
+.client .card h5 {
+    font-size: medium;
+    font-weight: 500;
+}
+
+.caroindi {
+    position: relative;
+    top: 290px;
+}
+
+.working {
+    padding: 80px 0;
+}
+
+.works {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.works .col-lg-3 img {
+    margin-bottom: 20px;
+}
+
+.works .col-lg-3 h5 {
+    font-size: medium;
+    font-weight: 500;
+}
+
+.works .col-lg-3 p {
+    font-size: smaller;
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.stories {
+    padding: 60px 0 0 0;
+    height: max-content;
+}
+
+.successstorires {
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+
+}
+
+.written {
+    padding: 50px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.written h5 {
+    padding: 60px 0 0 0;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.cares {
+    padding: 50px;
+    align-items: center;
+    color: var(--bg);
+}
+
+.cares h3 {
+    font-size: 34px;
+    font-weight: 450;
+    line-height: 3rem;
+}
+
+.cares p {
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.buttonsize {
+    padding: 30px;
+}
+
+.buttonsize button {
+    padding: 10px;
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+    opacity: 90%;
+}
+
+.plans {
+    padding: 100px 0px;
+}
+
+.prices {
+    padding-bottom: 60px;
+
+}
+
+.cards .card {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 500;
+    color: var(--muted);
+    box-shadow: var(--shadow-lg);
+}
+
+.cards .card h4 {
+    color: var(--text);
+    font-weight: 400;
+    line-height: 2 .25rem;
+}
+
+.cards .card span {
+    font-size: 55px;
+    color: var(--text);
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+.cards .card button {
+    padding: 10px 20px;
+    letter-spacing: 0.1rem;
+    font-size: small;
+}
+
+.lastcard .card {
+    height: 350px;
+    box-shadow: var(--shadow-sm);
+    border: none;
+}
+
+.lastcard .card img {
+    height: 220px;
+}
+
+.lastcard .card p {
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+.lastcard .card p span {
+    color: rgb(56, 148, 56);
+}
+
+.lastcard .card h5 {
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+footer {
+    padding:80px;
+}
+.tomove input{
+   width:350px;
+   padding: 10px;
+    margin-right: -5px;
+    border: none;
+    text-align: left;
+}
+.tomove button{
+    padding: 11px 30px;
+    margin-left: -2px;
+    border: none;
+    border-radius: 7px;
+    background-color: #059669;
+    color: var(--bg);
+}
+.tomove {
+    position: relative;
+    top: -102px;
+    left: 20%;
+}
+footer .row{
+    color: var(--muted);
+    font-size: smaller;
+    font-weight: 700;
+
+}
+footer .row h3{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--bg);
+}
+footer .row img{
+    margin: 20px 0;
+}
+footer .row .col-lg-2{
+    border-left: 1px solid var(--muted) ;
+}
+.last{
+    margin: 30px 80px  30px 0;
+    text-align:right;
+
+}
+.last a{
+   padding: 10px;
+    text-align: center;
+color: var(--muted);
+}
+.last a:hover{
+    color: var(--bg);
+}
